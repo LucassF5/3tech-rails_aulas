@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  # Rotas de teste
+
   # resources :likes
 
   # resources :comments
