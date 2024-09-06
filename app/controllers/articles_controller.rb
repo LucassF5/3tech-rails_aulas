@@ -15,11 +15,15 @@ class ArticlesController < ApplicationController
 
   # POST /articles
   def create
+    puts "PASSOU CREATE ========================"
     @article = Article.new(article_params)
+    puts "TENTOU CRIAR"
 
     if @article.save
+      puts "SALVOU"
       render json: @article, status: :created, location: @article
     else
+      puts "NÃO SALVOU"
       render json: @article.errors, status: :unprocessable_entity
     end
   end

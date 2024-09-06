@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  belongs_to :article, optional: true\
+  belongs_to :article, optional: true
   # O comentario pertence a um artigo
 
   # Validações
