@@ -7,5 +7,5 @@ class Article < ApplicationRecord
   # Validações
   validates :title, presence: true, length: {minimum:3}
   validates :content, presence: true
-  puts "PASSOU MODEL ARTICLE ========================"
+  
 end
